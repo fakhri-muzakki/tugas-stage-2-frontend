@@ -9,12 +9,8 @@ type Todo = {
   completed: boolean;
 };
 
-export default function TodoList() {
-  const [todos, setTodos] = useState<Todo[]>([
-    { id: 1, text: "Belajar Next.js", completed: false },
-    { id: 2, text: "Belajar React 19", completed: true },
-    { id: 3, text: "Bangun project", completed: false },
-  ]);
+export default function TodoList({ initialData }: { initialData: Todo[] }) {
+  const [todos, setTodos] = useState<Todo[]>(initialData);
 
   const toggleTodo = (id: number) => {
     setTodos((prev) =>

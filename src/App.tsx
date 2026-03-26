@@ -1,4 +1,11 @@
 import TodoList from "./components/Todolist";
+import type { Todo } from "./types";
+
+const todosData: Todo[] = [
+  { id: 1, text: "Belajar Next.js", completed: false },
+  { id: 2, text: "Belajar React 19", completed: false },
+  { id: 3, text: "Bangun project", completed: false },
+];
 
 const App = () => {
   return (
@@ -6,14 +13,8 @@ const App = () => {
       <div className="max-w-md bg-neutral-900 border border-neutral-800 rounded-2xl shadow-lg p-6 ">
         <h1 className="text-xl font-semibold text-white mb-4">Todo List</h1>
 
-        <TodoList />
+        <TodoList initialData={todosData} />
       </div>
-      {/* <p className="">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut ipsam
-        incidunt ipsa pariatur dolores accusamus officia aspernatur placeat
-        cupiditate sapiente quibusdam itaque possimus, unde maiores repellendus
-        blanditiis velit vel voluptatum?{" "}
-      </p> */}
     </main>
   );
 };
