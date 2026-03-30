@@ -28,9 +28,12 @@ const Cart = ({ isOpen, setIsOpen, cart }: CartProps) => {
             key={i}
             className="flex items-center gap-3 bg-neutral-800 p-2 rounded-lg"
           >
-            <img src={item.image} className="w-10 h-10 rounded object-cover" />
+            <img
+              src={item.thumbnail}
+              className="w-10 h-10 rounded object-cover"
+            />
             <div className="text-sm">
-              <p>{item.name}</p>
+              <p>{item.title}</p>
               <p className="text-neutral-400">
                 Rp {item.price.toLocaleString()}
               </p>
