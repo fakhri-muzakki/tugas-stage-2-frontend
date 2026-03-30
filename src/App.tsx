@@ -1,19 +1,56 @@
-import TodoList from "./components/Todolist";
-import type { Todo } from "./types";
-
-const todosData: Todo[] = [
-  { id: 1, text: "Belajar Next.js", completed: false },
-  { id: 2, text: "Belajar React 19", completed: false },
-  { id: 3, text: "Bangun project", completed: false },
-];
+import { useEffect, useState } from "react";
+import WeatherForm from "./components/WeatherForm";
+import type { WeatherData } from "./types";
+import WeatherCard from "./components/WeatherCard";
+import WeatherCardSkeleton from "./components/skeletons/WeatherCardSkeleton";
+import { getWeather } from "./lib/weather";
+import { useDebounce } from "./hooks/useDebounce";
 
 const App = () => {
-  return (
-    <main className="min-h-screen bg-neutral-950 flex items-center justify-center p-4 ">
-      <div className="max-w-md bg-neutral-900 border border-neutral-800 rounded-2xl shadow-lg p-6 ">
-        <h1 className="text-xl font-semibold text-white mb-4">Todo List</h1>
+  const [city, setCity] = useState("");
+  const [data, setData] = useState<WeatherData | null>(null);
+  const [status, setStatus] = useState<"Loading" | "Error" | null>(null);
 
-        <TodoList initialData={todosData} />
+  const debounceValue = useDebounce(city, 500);
+
+  useEffect(() => {
+    if (debounceValue.length === 0) {
+      return;
+    }
+
+    const fetchData = async (): Promise<void> => {
+      try {
+        setStatus("Loading");
+        const result = await getWeather(debounceValue);
+        setData(result);
+        setStatus(null);
+      } catch (error) {
+        setStatus("Error");
+        console.log(error);
+      }
+    };
+
+    fetchData();
+  }, [debounceValue]);
+
+  return (
+    <main className="min-h-screen bg-[#0a0a0a] text-white flex items-center justify-center p-6">
+      <div className="w-full max-w-xl space-y-6">
+        {/* Form */}
+        <WeatherForm city={city} setCity={setCity} />
+
+        {/* Result */}
+        {status === "Loading" ? (
+          <WeatherCardSkeleton />
+        ) : data ? (
+          <WeatherCard data={data} />
+        ) : null}
+
+        {status === "Error" && (
+          <div className="bg-red-500/10 border border-red-500/30 text-red-400 p-4 rounded-xl text-sm">
+            Kota tidak ditemukan atau terjadi kesalahan
+          </div>
+        )}
       </div>
     </main>
   );
