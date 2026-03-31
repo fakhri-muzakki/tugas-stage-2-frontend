@@ -2,6 +2,7 @@
 
 Perbedaan dengan video learning
 - setup react router
+- dark mode
 
 
 

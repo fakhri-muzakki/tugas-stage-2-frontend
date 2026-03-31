@@ -15,3 +15,9 @@ export interface WeatherData {
     speed: number;
   };
 }
+
+export interface Post {
+  id: string;
+  title: string;
+  body: string;
+}
