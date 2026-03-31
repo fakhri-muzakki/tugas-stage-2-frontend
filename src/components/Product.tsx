@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import type { IProduct } from "../types";
 
 type ProductProps = {
@@ -9,11 +10,17 @@ const Product = ({ product, toggleAddToCart }: ProductProps) => {
   return (
     <div className="bg-neutral-900 border border-neutral-800 rounded-2xl overflow-hidden shadow-lg flex flex-col">
       {/* Image */}
-      <img
-        src={product.thumbnail}
-        className=" aspect-square object-cover"
-        alt={product.title}
-      />
+      <Link
+        to={{
+          pathname: `/products/${product.id}`,
+        }}
+      >
+        <img
+          src={product.thumbnail}
+          className=" aspect-square object-cover"
+          alt={product.title}
+        />
+      </Link>
 
       {/* Content */}
       <div className="p-4 flex flex-col flex-1 bg-neutral-800">

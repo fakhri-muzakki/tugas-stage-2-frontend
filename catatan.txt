@@ -1,0 +1,21 @@
+
+
+Perbedaan dengan video learning
+- setup react router
+- dark mode
+- context
+
+
+
+
+video materi :
+https://drive.google.com/file/d/1lgOouQ3N_vVa6I9EGG8h0JYGE69TfRsP/view
+
+cp 1:
+https://drive.google.com/file/d/1oRLRukovq76g392xYcF_5Wjjm6tkzPNn/view
+
+cp 2:
+https://drive.google.com/file/d/1BfHJEiHhIIcoh1pQXGtA5hHHep-sJRjM/view
+
+form :
+https://docs.google.com/forms/d/e/1FAIpQLSfnYTorvHxXmzL_0omw7lvtNL9-3CkTWaKRO8tSEZdlIQItgw/viewform?usp=send_form
