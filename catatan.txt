@@ -1,40 +1,19 @@
 
 
-- Auto focus
-- Separation of Concerns / Single Responsibility Principle 
-- Layout shifting
+Perbedaan dengan video learning
+- setup react router
 
 
 
-
-
-
-
-cp 1:
-https://drive.google.com/file/d/1TXBVUi4IHo6Th-R8Ceyv3pJ0MZAANPfL/view
-
-cp 2:
-https://drive.google.com/file/d/1w13HzzG583n6rOnEgdlknG3C4nSW4Elv/view
 
 video materi :
-https://drive.google.com/file/d/11kKFtlBowuXseqVGymWJMCsWY4uSDTVn/view
+https://drive.google.com/file/d/1lgOouQ3N_vVa6I9EGG8h0JYGE69TfRsP/view
+
+cp 1:
+https://drive.google.com/file/d/1oRLRukovq76g392xYcF_5Wjjm6tkzPNn/view
+
+cp 2:
+https://drive.google.com/file/d/1BfHJEiHhIIcoh1pQXGtA5hHHep-sJRjM/view
 
 form :
-https://docs.google.com/forms/d/e/1FAIpQLSf-wSGgLxesy003E1OQr1V3fHY12hbRGuBk3HKD2RTbr6oWhA/viewform
-
-
-
-Api key open weather :
-8aa95c1864be058c9986c62ebe43e618
-
-
-Endpoint :
-https://api.openweathermap.org
-
-
-Docs API:
-https://openweathermap.org/api/one-call-3?collection=one_call_api_3.0
-
-Endpoint API product :
-- https://dummyjson.com/products/search?q=laptop
-- limit dan skip
+https://docs.google.com/forms/d/e/1FAIpQLSfnYTorvHxXmzL_0omw7lvtNL9-3CkTWaKRO8tSEZdlIQItgw/viewform?usp=send_form
