@@ -1,9 +1,13 @@
 import { ThemeProvider } from "./components/theme-provider";
+import AuthProvider from "./providers/AuthProvider";
+import FavoriteProvider from "./providers/FavoriteProvider";
 
 const App = ({ children }: React.PropsWithChildren) => {
   return (
     <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
-      {children}
+      <AuthProvider>
+        <FavoriteProvider>{children}</FavoriteProvider>
+      </AuthProvider>
     </ThemeProvider>
   );
 };

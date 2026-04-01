@@ -1,20 +1,48 @@
 
+Tugas :
+- Fetch data movie
+- Pakai tailwind dan shadcn
+- private route favorites untuk yang sudah login
+- simpen token login dan logout
 
-Perbedaan dengan video learning
-- setup react router
-- dark mode
+
+Tambahan :
+- Buat context untuk favorite
+- Tambah toast untuk notif
+- Tambah validasi pakai zod
+- Public route
+
+
+register -> api register
+login -> api login -> simpan di context
+                   -> simpan di localstorage
 
 
 
+https://image.tmdb.org/t/p/w500
+https://api.themoviedb.org/3/movie/popular?api_key=4dba1a7bd161445f3f1ce20c57bddd34
 
-video materi :
-https://drive.google.com/file/d/1lgOouQ3N_vVa6I9EGG8h0JYGE69TfRsP/view
+
 
 cp 1:
-https://drive.google.com/file/d/1oRLRukovq76g392xYcF_5Wjjm6tkzPNn/view
+https://drive.google.com/file/d/1aicAKuwqPPqe0EDgQhHGVKTKO6iaPG2u/view
 
 cp 2:
-https://drive.google.com/file/d/1BfHJEiHhIIcoh1pQXGtA5hHHep-sJRjM/view
+https://drive.google.com/file/d/18C7K3SNxiVt-QIckzysmxc4vpIReLOwN/view
 
-form :
-https://docs.google.com/forms/d/e/1FAIpQLSfnYTorvHxXmzL_0omw7lvtNL9-3CkTWaKRO8tSEZdlIQItgw/viewform?usp=send_form
+video learning:
+https://drive.google.com/file/d/1F2SbMtWKcgH1-CyH49mwbYxDheoe4Xci/view
+
+form:
+https://docs.google.com/forms/d/e/1FAIpQLSdrvNOBgemr3uWv2ClJhUOvfuHr0qro_4kknrSu6qwT8qPJfQ/viewform
+
+
+ "backdrop_path": "/1x9e0qWonw634NhIsRdvnneeqvN.jpg",
+ "poster_path": "/7wIBfBl2gejt6xHxNSK0reVIm7E.jpg",
+
+
+ Buat halaman login dan register
+ Buat api untuk get dan add favorite
+
+ Buat context favoriteMovie
+ Buat halaman favorite

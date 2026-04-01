@@ -1,7 +1,9 @@
+import { useAuth } from "@/hooks/useAuth";
 import { useState } from "react";
 import { Link } from "react-router";
 
 export const Navbar = () => {
+  const { logout } = useAuth();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
@@ -29,7 +31,7 @@ export const Navbar = () => {
             <rect x="14" y="11" width="7" height="12" />
           </svg>
           <span className="ml-2 text-xl font-bold tracking-wide text-gray-400 uppercase">
-            Blogapp
+            Movie
           </span>
         </a>
         <ul className=" items-center hidden space-x-8 lg:flex">
@@ -55,13 +57,21 @@ export const Navbar = () => {
           </li>
           <li>
             <Link
-              to="/posts"
+              to="/favorites"
               aria-label="Our product"
               title="Our product"
               className="font-medium tracking-wide text-gray-400 transition-colors duration-200 hover:text-deep-purple-accent-400"
             >
-              Posts
+              Favorites
             </Link>
+          </li>
+          <li className="">
+            <button
+              className="px-4 py-2 bg-red-800 rounded-lg text-red-50 font-semibold"
+              onClick={logout}
+            >
+              Logout
+            </button>
           </li>
         </ul>
         <div className="lg:hidden">
