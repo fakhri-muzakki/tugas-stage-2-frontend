@@ -1,10 +1,13 @@
-import { CartProvider } from "./CartProvider";
+import { CartProvider } from "./providers/CartProvider";
 import { ThemeProvider } from "./components/theme-provider";
+import AuthProvider from "./providers/AuthProvider";
 
 const App = ({ children }: React.PropsWithChildren) => {
   return (
     <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
-      <CartProvider>{children}</CartProvider>
+      <AuthProvider>
+        <CartProvider>{children}</CartProvider>
+      </AuthProvider>
     </ThemeProvider>
   );
 };

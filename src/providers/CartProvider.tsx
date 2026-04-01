@@ -1,6 +1,6 @@
 import { useState } from "react";
-import type { IProduct } from "./types";
-import CartContext from "./contexts/CartContext";
+import type { IProduct } from "../types";
+import CartContext from "../contexts/CartContext";
 
 export function CartProvider({ children }: { children: React.ReactNode }) {
   const [cart, setCart] = useState<IProduct[]>([]);

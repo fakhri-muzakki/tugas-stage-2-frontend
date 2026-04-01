@@ -1,4 +1,3 @@
-// import Cart from "@/components/Cart";
 import Product from "@/components/Product";
 import ProductForm from "@/components/ProductForm";
 import ProductNotFound from "@/components/ProductNotFound";

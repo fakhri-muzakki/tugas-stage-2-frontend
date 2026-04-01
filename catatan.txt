@@ -1,21 +1,33 @@
 
+Tugas :
+- Pakai hover, focus dan dark mode
+- fetch data products
 
-Perbedaan dengan video learning
-- setup react router
-- dark mode
-- context
+- login dan simpan token di localstorage dan Auth context
+- logout
+- Buat halaman dashboard yang hanya bisa diakses user yang sudah login
+
+
+
+register -> api register
+login -> api login -> simpan di context
+                   -> simpan di localstorage
 
 
 
 
-video materi :
-https://drive.google.com/file/d/1lgOouQ3N_vVa6I9EGG8h0JYGE69TfRsP/view
+https://api.themoviedb.org/3/movie/popular?api_key=4dba1a7bd161445f3f1ce20c57bddd34
+
+
 
 cp 1:
-https://drive.google.com/file/d/1oRLRukovq76g392xYcF_5Wjjm6tkzPNn/view
+https://drive.google.com/file/d/1aicAKuwqPPqe0EDgQhHGVKTKO6iaPG2u/view
 
 cp 2:
-https://drive.google.com/file/d/1BfHJEiHhIIcoh1pQXGtA5hHHep-sJRjM/view
+https://drive.google.com/file/d/18C7K3SNxiVt-QIckzysmxc4vpIReLOwN/view
 
-form :
-https://docs.google.com/forms/d/e/1FAIpQLSfnYTorvHxXmzL_0omw7lvtNL9-3CkTWaKRO8tSEZdlIQItgw/viewform?usp=send_form
+video learning:
+https://drive.google.com/file/d/1F2SbMtWKcgH1-CyH49mwbYxDheoe4Xci/view
+
+form:
+https://docs.google.com/forms/d/e/1FAIpQLSdrvNOBgemr3uWv2ClJhUOvfuHr0qro_4kknrSu6qwT8qPJfQ/viewform

@@ -1,5 +1,6 @@
 import { Link, NavLink } from "react-router-dom";
 import { cn } from "@/lib/utils"; // helper dari shadcn
+import { useAuth } from "@/hooks/useAuth";
 
 const navItems = [
   { name: "Home", path: "/" },
@@ -8,6 +9,8 @@ const navItems = [
 ];
 
 const Navbar = () => {
+  const { logout } = useAuth();
+
   return (
     <header className="border-b bg-background fixed top-0 w-full">
       <div className="max-w-6xl mx-auto flex items-center justify-between px-6 py-4">
@@ -33,6 +36,12 @@ const Navbar = () => {
               {item.name}
             </NavLink>
           ))}
+          <button
+            className="px-4 py-2 bg-red-800 text-red-50 rounded-lg font-semibold"
+            onClick={logout}
+          >
+            Logout
+          </button>
         </nav>
       </div>
     </header>
