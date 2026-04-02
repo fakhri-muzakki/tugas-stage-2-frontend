@@ -1,17 +1,8 @@
-export interface IProduct {
-  id: number;
+export interface Cart {
+  id: string;
   title: string;
-  price: number;
-  thumbnail: string;
-  added: boolean;
-
-  rating: string;
-  category: string;
   description: string;
-}
-
-export interface User {
-  id: number;
-  name: string;
-  email: string;
+  price: string;
+  stock: number;
+  thumbnail: string;
 }
