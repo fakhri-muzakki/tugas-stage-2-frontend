@@ -1,15 +1,7 @@
-import { ThemeProvider } from "./components/theme-provider";
-import AuthProvider from "./providers/AuthProvider";
-import FavoriteProvider from "./providers/FavoriteProvider";
+import TodoProvider from "./providers/TodoProvider";
 
 const App = ({ children }: React.PropsWithChildren) => {
-  return (
-    <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
-      <AuthProvider>
-        <FavoriteProvider>{children}</FavoriteProvider>
-      </AuthProvider>
-    </ThemeProvider>
-  );
+  return <TodoProvider>{children}</TodoProvider>;
 };
 
 export default App;

@@ -1,8 +1,8 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import { RouterProvider } from "react-router/dom";
 import "./index.css";
 import App from "./App.tsx";
+import { RouterProvider } from "react-router-dom";
 import router from "./routes/router.tsx";
 import { Toaster } from "react-hot-toast";
 
@@ -19,10 +19,10 @@ createRoot(document.getElementById("root")!).render(
         toastOptions={{
           // Define default options
           className: "",
-          duration: 3000,
+          duration: 5000,
           removeDelay: 1000,
           style: {
-            background: "oklch(52.7% 0.154 150.069)",
+            background: "#363636",
             color: "#fff",
           },
 
@@ -30,8 +30,8 @@ createRoot(document.getElementById("root")!).render(
           success: {
             duration: 3000,
             iconTheme: {
-              primary: "oklch(72.3% 0.219 149.579)",
-              secondary: "#fff",
+              primary: "green",
+              secondary: "black",
             },
           },
         }}
